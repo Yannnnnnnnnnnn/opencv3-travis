@@ -27,7 +27,7 @@ addons:
       - libjasper-dev
       - libdc1394-22-dev
 
-install:
+before_script:
   - curl -sL https://github.com/Itseez/opencv/archive/3.0.0.zip > opencv.zip
   - unzip opencv.zip
   - cd opencv-3.0.0
